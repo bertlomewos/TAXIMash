@@ -10114,7 +10114,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 68.99282}
+  m_AnchoredPosition: {x: 0, y: 68.99283}
   m_SizeDelta: {x: 0, y: -162.01456}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &280855340
@@ -24012,6 +24012,7 @@ GameObject:
   - component: {fileID: 537081627}
   - component: {fileID: 537081630}
   - component: {fileID: 537081629}
+  - component: {fileID: 537081632}
   - component: {fileID: 537081628}
   - component: {fileID: 537081631}
   m_Layer: 5
@@ -24096,6 +24097,18 @@ MonoBehaviour:
           m_StringArgument: pack
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 537081632}
+        m_TargetAssemblyTypeName: PackListItem, Assembly-CSharp
+        m_MethodName: showMyBackground
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &537081629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24146,6 +24159,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf1a70d0fd4145c4af5af28c4dcaa36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &537081632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537081626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e66f533a408bbba4b80b1b8908a49553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  banner: {fileID: 0}
+  locked: {fileID: 0}
+  showLevel: {fileID: 0}
+  levelText: {fileID: 0}
+  starRequestText: {fileID: 0}
+  gameModeText: {fileID: 0}
 --- !u!1 &541612642
 GameObject:
   m_ObjectHideFlags: 0
@@ -26951,7 +26982,7 @@ GameObject:
   - component: {fileID: 665140675}
   - component: {fileID: 665140674}
   m_Layer: 5
-  m_Name: btn_settings (1)
+  m_Name: btn_shop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32987,7 +33018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameModeInfors:
-  - nameGameMode: Easy
+  - nameGameMode: Easy Mode
     idGameMode: 0
     bannerGameMode: {fileID: 21300000, guid: 142dece75b5ff4594a76329e11ad90b9, type: 3}
     starRequest: 0
@@ -33102,7 +33133,7 @@ MonoBehaviour:
     - {fileID: 4900000, guid: 79f2d103bc15c4e4eadaadfccf06fcdb, type: 3}
     - {fileID: 4900000, guid: 3662a8e98c5eb424296ade3b1be99518, type: 3}
     - {fileID: 4900000, guid: 1e001bfb07e56264c88ba3fb8baa758e, type: 3}
-  - nameGameMode: Normal
+  - nameGameMode: Normal Mode
     idGameMode: 1
     bannerGameMode: {fileID: 21300000, guid: 78e726cf8e0f44e9f884aff00c1d2fab, type: 3}
     starRequest: 10
@@ -33508,7 +33539,7 @@ MonoBehaviour:
     - {fileID: 4900000, guid: 83a0f56a103a03f47862159786462588, type: 3}
     - {fileID: 4900000, guid: b7a9aba59e63e5a4d8fda8d33b676a47, type: 3}
     - {fileID: 4900000, guid: 0c6e12334c72dc746a4de3fefa82d672, type: 3}
-  - nameGameMode: Hard
+  - nameGameMode: Hard Mode
     idGameMode: 2
     bannerGameMode: {fileID: 21300000, guid: 60b59b40e8386465ba2883d632da8c3c, type: 3}
     starRequest: 50
@@ -34523,7 +34554,7 @@ MonoBehaviour:
     - {fileID: 4900000, guid: f10927179eecd96498d12f663ac3e6bc, type: 3}
     - {fileID: 4900000, guid: a8c0218466b975f4495d3b1bcabc9804, type: 3}
     - {fileID: 4900000, guid: 55eff9c8c35c2334a96950dab50812cf, type: 3}
-  - nameGameMode: Pro 1
+  - nameGameMode: Pro 1  Mode
     idGameMode: 3
     bannerGameMode: {fileID: 21300000, guid: 1047ae35200f94be0acaf6a580710a0a, type: 3}
     starRequest: 100
@@ -35531,7 +35562,7 @@ MonoBehaviour:
     - {fileID: 4900000, guid: bbbd99d70d8e495438a3609a7985f193, type: 3}
     - {fileID: 4900000, guid: bb00ba5ac3e517d429515532b08b15b3, type: 3}
     - {fileID: 4900000, guid: ccb553180cd6e1848ab83b34e89ac960, type: 3}
-  - nameGameMode: Pro 2
+  - nameGameMode: Pro 2 Mode
     idGameMode: 4
     bannerGameMode: {fileID: 21300000, guid: 1047ae35200f94be0acaf6a580710a0a, type: 3}
     starRequest: 200
@@ -36541,7 +36572,7 @@ MonoBehaviour:
     - {fileID: 4900000, guid: 53210a177d743fc4a800145daaa91743, type: 3}
     - {fileID: 4900000, guid: 158b1e44b5414b748a219a08fbb95e2e, type: 3}
     - {fileID: 4900000, guid: 5c8de11fea82769409f9afea7a971d2b, type: 3}
-  - nameGameMode: Extreme
+  - nameGameMode: Extreme Mode
     idGameMode: 5
     bannerGameMode: {fileID: 21300000, guid: 1047ae35200f94be0acaf6a580710a0a, type: 3}
     starRequest: 300
@@ -37569,6 +37600,7 @@ MonoBehaviour:
   levelGameMode: 0
   CurrentLevelsInGameMode: []
   testMode: 0
+  background: {fileID: 819925231}
 --- !u!4 &718605576
 Transform:
   m_ObjectHideFlags: 0
@@ -42005,6 +42037,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812434830}
   m_CullTransparentMesh: 0
+--- !u!1 &819925231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 819925232}
+  - component: {fileID: 819925234}
+  - component: {fileID: 819925233}
+  m_Layer: 5
+  m_Name: BG PlayLevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &819925232
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819925231}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 989171773}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &819925233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819925231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 309be2b1accd96046b49e8d91ddb7c1f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &819925234
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819925231}
+  m_CullTransparentMesh: 0
 --- !u!1 &824506609
 GameObject:
   m_ObjectHideFlags: 0
@@ -44177,6 +44284,7 @@ RectTransform:
   m_Children:
   - {fileID: 723689540}
   - {fileID: 1639468958}
+  - {fileID: 819925232}
   - {fileID: 623411716}
   - {fileID: 626488997}
   - {fileID: 280855339}
@@ -53949,7 +54057,7 @@ GameObject:
   - component: {fileID: 1639468960}
   - component: {fileID: 1639468959}
   m_Layer: 5
-  m_Name: BG PlayerLevel
+  m_Name: BG PlayMode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

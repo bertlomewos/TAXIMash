@@ -22,6 +22,7 @@ public class GameModeInfor
     public List<TextAsset> datas = new List<TextAsset>();
     public List<TextAsset> hintsData = new List<TextAsset>();
 
+
     public void SaveLevel()
     {
       
@@ -161,6 +162,11 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private bool testMode = false;
     public int GetTotalStarEarnAllMode { get { return totalStarEarnAllMode; } }
+
+
+
+    /*[New added background]*/
+    public GameObject background;
 
     private void Awake()
     {

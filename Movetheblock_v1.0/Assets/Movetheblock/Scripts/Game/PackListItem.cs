@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using ScreenFrameWork;
 using TMPro;
 using PopUpFrameWork;
+using Unity.VisualScripting;
 public class PackListItem : ExpandableListItem<GameModeInfor>
 {
 
@@ -24,8 +25,9 @@ public class PackListItem : ExpandableListItem<GameModeInfor>
     private GameModeInfor dataObject;
     private RectTransform rectLocked;
     private bool unlock = false;
-   
-   
+
+
+
     public override void Initialize(GameModeInfor dataObject)
     {
         rectLocked = locked.GetComponent<RectTransform>();
@@ -98,5 +100,12 @@ public class PackListItem : ExpandableListItem<GameModeInfor>
         GameManager.GAME_MODE = dataObject.nameGameMode;
         GameManager.instance.SelectedGameMode(dataObject.idGameMode);
         ScreenManager.Instance.Show("levels");
+    }
+
+
+    /*[New added background]*/
+    public void showMyBackground(bool IsOne)
+    {
+        GameManager.instance.background.SetActive(IsOne);
     }
 }
