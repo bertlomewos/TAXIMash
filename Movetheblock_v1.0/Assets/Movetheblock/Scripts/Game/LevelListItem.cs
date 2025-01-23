@@ -58,12 +58,12 @@ public class LevelListItem : MonoBehaviour
 
 
         VisibleBlocks(false);
-        levelText.text = dataObject.levelShowStage.ToString();
+        levelText.text = "Level\n" + dataObject.levelShowStage.ToString();
 
         dataObject.Load();
         this.dataObject = dataObject;
         SetUpLevel(dataObject);
-        SetUpBoard(dataObject.levelData);
+        //SetUpBoard(dataObject.levelData);
 
     }
 
@@ -78,7 +78,7 @@ public class LevelListItem : MonoBehaviour
         lockedObj.SetActive(locked);
         fadeObj.SetActive(locked);
         starObj.SetActive(completed);
-        completeObj.SetActive(completed);
+        /*completeObj.SetActive(completed);*/
         highLightObj.SetActive(current);
         if (completed)
         {
@@ -238,6 +238,11 @@ public class LevelListItem : MonoBehaviour
         ScreenManager.Instance.Show("game");
         GameManager.instance.CurrentLevel = dataObject;
         GameManager.instance.PlayGame();
+    }
+
+    public void GameBackGround(bool isOn)
+    {
+        GameManager.instance.PlayBackgGround.SetActive(isOn);
     }
 
 

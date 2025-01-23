@@ -104,8 +104,8 @@ public class PackListItem : ExpandableListItem<GameModeInfor>
 
 
     /*[New added background]*/
-    public void showMyBackground(bool IsOne)
+    public void showMyBackground(bool IsOn)
     {
-        GameManager.instance.background.SetActive(IsOne);
+        GameManager.instance.background.SetActive(IsOn);
     }
 }

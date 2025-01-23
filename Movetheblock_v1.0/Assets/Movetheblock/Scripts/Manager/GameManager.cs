@@ -167,12 +167,15 @@ public class GameManager : MonoBehaviour
 
     /*[New added background]*/
     public GameObject background;
+    public GameObject PlayBackgGround;
 
     private void Awake()
     {
         instance = this;
         totalStarAllMode = 0;
         int totalStage = 0;
+        background.SetActive(false);
+        PlayBackgGround.SetActive(false);
         for (int i = 0; i < gameModeInfors.Count; i++)
         {
             GameModeInfor game = gameModeInfors[i];
